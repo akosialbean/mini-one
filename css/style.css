@@ -1,0 +1,50 @@
+body{
+    background: url('../img/hero-bg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.h100{
+    height: 100vh;
+}
+
+.h90{
+    height: 90vh;
+}
+
+.h80{
+    height: 80vh;
+}
+
+.h70{
+    height: 70vh;
+}
+
+.h60{
+    height: 60vh;
+}
+
+.h50{
+    height: 50vh;
+}
+
+.h40{
+    height: 40vh;
+}
+
+.h30{
+    height: 30vh;
+}
+
+.h20{
+    height: 20vh;
+}
+
+.h15{
+    height: 15vh;
+}
+
+.h10{
+    height: 10vh;
+}
