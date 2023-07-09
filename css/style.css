@@ -48,3 +48,12 @@ body{
 .h10{
     height: 10vh;
 }
+
+.section-bg{
+    background: #f7fbfe;
+}
+
+/* .card-hover:hover{
+    background: blue;
+    color: #fff;
+} */
