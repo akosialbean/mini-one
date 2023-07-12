@@ -1,29 +1,45 @@
-// function cardHoverBg(){
-//     let cardHover = document.querySelector(".card-hover")
-//     cardHover.classList.toggle("bg-primary", "text-light")
-// }
+let jobCountView = document.querySelector("#jobSeekersCount")
+let jobCount = 0
+let jobCountTotal = 27777
+let jobCountTotalMin = jobCountTotal / 100
+let jobCountInterval = setInterval(function(){
+    jobCountView.innerHTML = jobCount
+    jobCount++
 
-// function cardHoverBg2(){
-//     let cardHover = document.querySelector(".card-hover")
-//     cardHover.classList.toggle("bg-light", "text-dark")
-// }
-
-
-let cardHover = document.querySelector(".card-hover")
-let isEvent = true
-
-function handleMouseOver(){
-    cardHover.classList.add("bg-primary", "text-light");
-}
-
-function toggleListener(){
-    if(!isEvent){
-        isEvent = true
-        cardHover.addEventListener('mouseover', handleMouseOver);
-    }else if(isEvent){
-        isEvent = false
-        cardHover.removeEventListener('mouseover', handleMouseOver);
+    if(jobCount >= jobCountTotal){
+        clearInterval(jobCountInterval)
     }
-}
+}, 1)
 
-toggleListener()
+let employerCountView = document.querySelector("#employersCount")
+let employerCount = 1
+let employerCountInterval = setInterval(function(){
+    employerCountView.innerHTML = employerCount
+    employerCount++
+
+    if(employerCount == 4671){
+        clearInterval(employerCountInterval)
+    }
+}, 4)
+
+let jobVanciesView = document.querySelector("#jobVacanciesCount")
+let jobVacanciesCount = 1
+let jobVacanciesInterval = setInterval(function(){
+    jobVanciesView.innerHTML = jobVacanciesCount
+    jobVacanciesCount++
+
+    if(jobVacanciesCount == 3226){
+        clearInterval(jobVacanciesInterval)
+    }
+}, 4)
+
+let jobSeekersHiredView = document.querySelector("#jobSeekersHired")
+let jobSeekersHiredCount = 1
+let jobSeekersHiredInterval = setInterval(function(){
+    jobSeekersHiredView.innerHTML = jobSeekersHiredCount
+    jobSeekersHiredCount++
+
+    if(jobSeekersHiredCount == 11315){
+        clearInterval(jobSeekersHiredInterval)
+    }
+}, 4)
