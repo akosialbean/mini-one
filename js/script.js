@@ -1,45 +1,51 @@
 let jobCountView = document.querySelector("#jobSeekersCount")
 let jobCount = 0
 let jobCountTotal = 27777
-let jobCountTotalMin = jobCountTotal / 100
+let jobCountTotalMin = jobCountTotal / 10
 let jobCountInterval = setInterval(function(){
-    jobCountView.innerHTML = jobCount
-    jobCount++
+    jobCount+=jobCountTotalMin
+    jobCountView.innerHTML = parseInt(jobCount)
 
     if(jobCount >= jobCountTotal){
         clearInterval(jobCountInterval)
     }
-}, 1)
+}, 100)
 
 let employerCountView = document.querySelector("#employersCount")
-let employerCount = 1
+let employerCount = 0
+let employerCountTotal = 4671
+let employerCountMin = employerCountTotal / 10
 let employerCountInterval = setInterval(function(){
-    employerCountView.innerHTML = employerCount
-    employerCount++
+    employerCount+=employerCountMin
+    employerCountView.innerHTML = parseInt(employerCount)
 
-    if(employerCount == 4671){
+    if(employerCount >= employerCountTotal){
         clearInterval(employerCountInterval)
     }
-}, 4)
+}, 100)
 
 let jobVanciesView = document.querySelector("#jobVacanciesCount")
-let jobVacanciesCount = 1
+let jobVacanciesCount = 0
+let jobVacanciesCountTotal = 3226
+let jobVacanciesCountMin = jobVacanciesCountTotal / 10
 let jobVacanciesInterval = setInterval(function(){
-    jobVanciesView.innerHTML = jobVacanciesCount
-    jobVacanciesCount++
+    jobVacanciesCount+=jobVacanciesCountMin
+    jobVanciesView.innerHTML = parseInt(jobVacanciesCount)
 
-    if(jobVacanciesCount == 3226){
+    if(jobVacanciesCount >= jobVacanciesCountTotal){
         clearInterval(jobVacanciesInterval)
     }
-}, 4)
+}, 100)
 
 let jobSeekersHiredView = document.querySelector("#jobSeekersHired")
-let jobSeekersHiredCount = 1
+let jobSeekersHiredCount = 0
+let jobSeekersHiredTotal = 11315
+let jobSeekersHiredMin = jobSeekersHiredTotal / 10
 let jobSeekersHiredInterval = setInterval(function(){
-    jobSeekersHiredView.innerHTML = jobSeekersHiredCount
-    jobSeekersHiredCount++
+    jobSeekersHiredCount+=jobSeekersHiredMin
+    jobSeekersHiredView.innerHTML = parseInt(jobSeekersHiredCount)
 
-    if(jobSeekersHiredCount == 11315){
+    if(jobSeekersHiredCount >= jobSeekersHiredTotal){
         clearInterval(jobSeekersHiredInterval)
     }
-}, 4)
+}, 100)
