@@ -61,3 +61,7 @@ body{
     background: blue;
     color: #fff;
 } */
+
+.icon-box:hover {
+    box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.1);
+  }
