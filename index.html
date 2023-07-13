@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhilJobNet | Jobs and LMI Portal</title>
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
         <div class="container">
             <a class="navbar-brand">
-                <img src="./img/philjobnetlogo.png" alt="">
+                <img src="./img/philjobnetlogo.png" alt="logo" id="navLogo">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <button class="navbar-toggler border border-0" type="button" data-bs-toggle="modal" data-bs-target="#navModal">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="menu">
@@ -51,6 +52,55 @@
             </div>
         </div>
     </nav>
+
+    <!-- The Modal -->
+    <div class="modal modal-lg" id="navModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header bg-none">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body h80">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Jobs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Job Fairs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Trainings</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Career Advocacy</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Link</a></li>
+                                <li><a class="dropdown-item" href="#">Another link</a></li>
+                                <li><a class="dropdown-item" href="#">A third link</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Accredited Employers</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a href="#" class="btn btn-primary btn-sm rounded">SIGN UP</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="btn btn-primary btn-sm rounded">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <div class="container-fluid">
         <div class="row">
@@ -150,42 +200,42 @@
                     <h1>Special job categories</h1>
                     <h3>We have job vacancies for various types of jobseekers</h3>
                     <div class="row">
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card">
+                        <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                            <div class="card border border-0">
                                 <div class="card-body">
                                     <img src="./img/pwd.jpg" class="rounded img-fluid" alt="pwd">
                                 </div>
-                                <div class="card-footer">
+                                <div class="card-footer border border-0">
                                     <h5 class="text-center">Differently abled / PWD</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card">
+                        <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                            <div class="card border border-0">
                                 <div class="card-body">
                                     <img src="./img/displaced.png" class="rounded img-fluid" alt="displaced">
                                 </div>
-                                <div class="card-footer">
+                                <div class="card-footer border border-0">
                                     <h5 class="text-center">Displaced workers</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card">
+                        <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                            <div class="card border border-0">
                                 <div class="card-body">
                                     <img src="./img/highschool.png" class="rounded img-fluid" alt="highschool">
                                 </div>
-                                <div class="card-footer">
+                                <div class="card-footer border border-0">
                                     <h5 class="text-center">High school graduates</h5>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-3 col-lg-3">
-                            <div class="card">
+                        <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                            <div class="card border border-0">
                                 <div class="card-body">
                                     <img src="./img/government.png" class="rounded img-fluid" alt="government">
                                 </div>
-                                <div class="card-footer card-hover" onmouseover="toggleListener()">
+                                <div class="card-footer border border-0" onmouseover="toggleListener()">
                                     <h5 class="text-center">Government jobs</h5>
                                 </div>
                             </div>
@@ -196,26 +246,30 @@
         </div>
 
         <div class="row">
-            <div class="col-12 section-bg h60">
+            <div class="col-12 pt-5 section-bg h60">
                 <div class="container">
                     <h1>Quick Stats</h1>
                     <h3>PhilJobNet is FREE for all and accessible 24/7</h3>
                     <div class="row">
-                        <div class="col-sm-6 col-md-3 col-lg-3">
-                            <h1 id="jobSeekersCount"></h1>
-                            <p>Jobseekers</p>
+                        <div class="col-sm-6 col-md-3 col-lg-3 pt-4">
+                            <center><i class="bi bi-people-fill bg-primary text-light p-3 rounded-circle"></i></center>
+                            <h1 id="jobSeekersCount" class="text-center mt-4"></h1>
+                            <p class="text-center">Jobseekers</p>
                         </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3">
-                            <h1 id="employersCount"></h1>
-                            <p>Employers</p>
+                        <div class="col-sm-6 col-md-3 col-lg-3 pt-4">
+                            <center><i class="bi bi-headset bg-primary text-light p-3 rounded-circle"></i></center>
+                            <h1 id="employersCount" class="text-center mt-4"></h1>
+                            <p class="text-center">Employers</p>
                         </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3">
-                            <h1 id="jobVacanciesCount"></h1>
-                            <p>Job vacancies</p>
+                        <div class="col-sm-6 col-md-3 col-lg-3 pt-4">
+                            <center><i class="bi bi-briefcase bg-primary text-light p-3 rounded-circle"></i></center>
+                            <h1 id="jobVacanciesCount" class="text-center mt-4"></h1>
+                            <p class="text-center">Job vacancies</p>
                         </div>
-                        <div class="col-sm-6 col-md-3 col-lg-3">
-                            <h1 id="jobSeekersHired"></h1>
-                            <p>Jobseekers hired</p>
+                        <div class="col-sm-6 col-md-3 col-lg-3 pt-4">
+                            <center><i class="bi bi-emoji-smile bg-primary text-light p-3 rounded-circle"></i></center>
+                            <h1 id="jobSeekersHired" class="text-center mt-4"></h1>
+                            <p class="text-center">Jobseekers hired</p>
                         </div>
                     </div>
                 </div>

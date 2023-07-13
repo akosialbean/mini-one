@@ -54,12 +54,15 @@ let jobSeekersHiredInterval = setInterval(function(){
 //NAVBAR
 
 let navBarOpacity = document.querySelector(".navbar")
+let navLogo = document.querySelector("#navLogo")
 window.onscroll = function(){
     if(window.scrollY){
-        navBarOpacity.style.opacity = "0.9"
+        navBarOpacity.style.opacity = "1"
         navBarOpacity.style.background = "black"
+        navLogo.style.height = "80px"
     }else{
         navBarOpacity.style.background = "black"
         navBarOpacity.style.opacity = "0.7"
+        navLogo.style.height = "100px"
     }
 }
