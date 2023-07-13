@@ -6,14 +6,17 @@
     <title>PhilJobNet | Jobs and LMI Portal</title>
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark" style="opacity:0.6;">
         <div class="container">
             <a class="navbar-brand">
-                <img src="./img/philjobnetlogo.png" alt="logo" id="navLogo">
+                <img src="./img/philjobnetlogo.png" alt="logo" id="navLogo" max-height="80px">
             </a>
             <button class="navbar-toggler border border-0" type="button" data-bs-toggle="modal" data-bs-target="#navModal">
                 <span class="navbar-toggler-icon"></span>
@@ -21,19 +24,19 @@
             <div class="collapse navbar-collapse justify-content-end" id="menu">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link text-light">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Jobs</a>
+                        <a href="#" class="nav-link text-light">Jobs</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Job Fairs</a>
+                        <a href="#" class="nav-link text-light">Job Fairs</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Trainings</a>
+                        <a href="#" class="nav-link text-light">Trainings</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Career Advocacy</a>
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown">Career Advocacy</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Link</a></li>
                             <li><a class="dropdown-item" href="#">Another link</a></li>
@@ -41,13 +44,17 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Accredited Employers</a>
+                        <a href="#" class="nav-link text-light">Accredited Employers</a>
                     </li>
-                    <li class="nav-item p-3">
-                        <a href="#" class="btn btn-primary btn-sm rounded">SIGN UP</a>
+                    <li class="nav-item p-2">
+                        <a href="#" class="bg-primary ps-4 pe-4 pt-3 pb-3 text-light small" style="font-size:0.8rem; border-radius:100px;">
+                            SIGN UP
+                        </a>
                     </li>
-                    <li class="nav-item p-3">
-                        <a class="btn btn-primary btn-sm rounded">LOGIN</a>
+                    <li class="nav-item p-2">
+                        <a href="#" class="bg-primary ps-4 pe-4 pt-3 pb-3 text-light small" style="font-size:0.8rem;border-radius:100px;">
+                            LOGIN
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -56,17 +63,17 @@
     <!-- Navbar End -->
 
     <!-- The Modal End -->
-    <div class="modal modal-lg" id="navModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
+    <div class="modal modal-lg border border-0" id="navModal">
+        <div class="modal-dialog border border-0">
+            <div class="modal-content" style="background: transparent">
 
                 <!-- Modal Header -->
-                <div class="modal-header bg-none">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                <div class="modal-header border border-0">
+                    <button type="button" class="btn-close text-light" data-bs-dismiss="modal"><strong><i class="bi bi-x-lg"></i></strong></button>
                 </div>
 
                 <!-- Modal body -->
-                <div class="modal-body h80">
+                <div class="modal-body bg-light border border-0 h80">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a href="#" class="nav-link">Home</a>
@@ -132,27 +139,54 @@
 
                             <h3>For Jobseekers</h3>
 
-                            <ul>
-                                <li>Search job opportunities</li>
-                                <li>Run job matching process</li>
-                                <li>Get a list of job vacancies with the employer's contact information</li>
-                                <li>Receive job invitations from accredited employers</li>
+                            <ul class="forJobSeekers">
+                                <li>
+                                    <span class="h4"><i class="bi bi-check-all text-primary"></i></span> 
+                                    <a href="#" class="lead">Search job opportunities</a>
+                                </li>
+                                <li>
+                                    <span class="h4"><i class="bi bi-check-all text-primary"></i></span> Run job matching process
+                                </li>
+                                <li>
+                                    <span class="h4"><i class="bi bi-check-all text-primary"></i></span> Get a list of job vacancies with the employer's contact information
+                                </li>
+                                <li>
+                                    <span class="h4"><i class="bi bi-check-all text-primary"></i></span> Receive job invitations from accredited employers
+                                </li>
                             </ul>
                             
                             <br><br>
 
-                            For Employers
-                            Post job vacancies for free
-                            View list and send job invitations to applicants matched to job vacancies
-                            Manage job applications and automate submission of job placement reports
-                            Participate in Job Fairs authorized by DOLE, nationwide<br><br>
+                            <span class="h3">For Employers</span>
+                            <ul class="forJobSeekers">
+                                <li>
+                                    <span class="h4"><i class="bi bi-check-all text-primary"></i></span>
+                                    <a href="#" class="lead">Post job vacancies for free</a>
+                                </li>
+                                <li>
+                                    <span class="h4"><i class="bi bi-check-all text-primary"></i></span>
+                                    View list and send job invitations to applicants matched to job vacancies
+                                </li>
+                                <li>
+                                    <span class="h4"><i class="bi bi-check-all text-primary"></i></span>
+                                    Manage job applications and automate submission of job placement reports
+                                </li>
+                                <li>
+                                    <span class="h4"><i class="bi bi-check-all text-primary"></i></span>
+                                    Participate in Job Fairs authorized by DOLE, nationwide
+                                </li>
+                            </ul>
+                            
+                            
+                            
+                            <br><br>
 
                             Accreditation of Partner-Employers<br><br>
                             Under DOLE Department Order No. 165 (Series of 2016), any company duly recognized by the Philippine government agencies/authorities and with TIN issued by the Bureau of Internal Revenue (BIR) may use the PhilJobNet services for free. By the Department of Labor's primary thrust to protect jobseekers against fraud, deceit, and illegal recruitment, DOLE established an accreditation process to ensure that employers/companies have the legal personality to post job vacancies and hire applicants. Only accredited employers may post job vacancies on PhilJobNet.<br><br>
 
                             The public may browse or search the list of accredited employers by visiting the link below:<br><br>
 
-                            <button type="button" class="btn btn-outline-primary">ONLINE VERIFICATION OF ACCREDITED EMPLOYERS</button><br><br>
+                            <button type="button" class="btn btn-outline-primary btn-sm">ONLINE VERIFICATION OF ACCREDITED EMPLOYERS</button><br><br>
 
                             <h3>Documentary Requirements for Accreditation</h3>
 
@@ -161,7 +195,8 @@
                             <p>
                                 <ol>
                                     <li>BIR Certificate of Registration (Form 2303); and</li>
-                                    <li>Any of the following, depending on the employer type:
+                                    <li>
+                                        Any of the following, depending on the employer type:
                                         Private
                                         <ul>
                                             <li>
@@ -210,42 +245,46 @@
                     <h3>We have job vacancies for various types of jobseekers</h3>
                     <div class="row">
                         <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                            <div class="card border border-0">
-                                <div class="card-body icon-box">
-                                    <img src="./img/pwd.jpg" class="rounded img-fluid" alt="pwd">
+                            <div class="card border border-0 card-hover">
+                                <div class="card-body p-0 icon-box">
+                                    <img src="./img/pwd.jpg" class="img-fluid" alt="pwd">
                                 </div>
-                                <div class="card-footer border border-0">
-                                    <h5 class="text-center">Differently abled / PWD</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                            <div class="card border border-0">
-                                <div class="card-body icon-box">
-                                    <img src="./img/displaced.png" class="rounded img-fluid" alt="displaced">
-                                </div>
-                                <div class="card-footer border border-0">
-                                    <h5 class="text-center">Displaced workers</h5>
+                                <div class="card-footer border border-0 text-center">
+                                    <span class="h6">
+                                        Differently abled / PWD
+                                    </span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                            <div class="card border border-0">
-                                <div class="card-body icon-box">
-                                    <img src="./img/highschool.png" class="rounded img-fluid" alt="highschool">
+                            <div class="card border border-0 card-hover">
+                                <div class="card-body p-0 icon-box">
+                                    <img src="./img/displaced.png" class="img-fluid" alt="displaced">
                                 </div>
-                                <div class="card-footer border border-0">
-                                    <h5 class="text-center">High school graduates</h5>
+                                <div class="card-footer border border-0 text-center">
+                                    <span class="h6">
+                                        Displaced workers
+                                    </span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
-                            <div class="card border border-0">
-                                <div class="card-body icon-box">
-                                    <img src="./img/government.png" class="rounded img-fluid" alt="government">
+                            <div class="card border border-0 card-hover">
+                                <div class="card-body p-0 icon-box">
+                                    <img src="./img/highschool.png" class="img-fluid" alt="highschool">
                                 </div>
-                                <div class="card-footer border border-0" onmouseover="toggleListener()">
-                                    <h5 class="text-center">Government jobs</h5>
+                                <div class="card-footer border border-0 text-center card-hover">
+                                    <span class="h6">High school graduates</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
+                            <div class="card border border-0 card-hover">
+                                <div class="card-body p-0 icon-box">
+                                    <img src="./img/government.png" class="img-fluid" alt="government">
+                                </div>
+                                <div class="card-footer border border-0 text-center">
+                                    <span class="h6">Government jobs</span>
                                 </div>
                             </div>
                         </div>
@@ -257,10 +296,14 @@
 
         <!-- Data Analytics Start -->
         <div class="row">
-            <div class="col-12 pt-5 section-bg h60">
-                <div class="container card icon-box">
-                    <h1>Quick Stats</h1>
-                    <h3>PhilJobNet is FREE for all and accessible 24/7</h3>
+            <div class="col-12 pt-5 section-bg pb-5">
+                <div class="container">
+                    <p class="text-center"><span class="h1 text-center">Quick Stats</span></p>
+                    <p class="text-center lead">
+                        PhilJobNet is FREE for all and accessible 24/7
+                    </p>
+                </div>
+                <div class="container bg-light icon-box p-5 border border-0">
                     <div class="row">
                         <div class="col-sm-12 col-md-3 col-lg-3 pt-4">
                             <center><i class="bi bi-people-fill bg-primary text-light p-3 rounded-circle"></i></center>
@@ -290,14 +333,19 @@
 
         <!-- Footer Start -->
         <div class="row">
-            <div class="col-12 h15" style="background:#f6f4f4;">
+            <div class="col-12 h10 p-4" style="background:#f6f4f4;">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-md-6 col-md-6">
-                            <p>© 2022 <a href="#">Bureau of Local Employment</a> | Contact us | Privacy policy</p>
+                            <p>© 2022 <a href="#">Bureau of Local Employment</a> | <a href="#">Contact us</a> | <a href="#">Privacy policy</a></p>
                         </div>
                         <div class="col-sm-12 col-md-6 col-md-6">
-                            
+                            <span class="float-end m-1">
+                                <i class="bi bi-whatsapp rounded rounded-circle bg-primary text-light p-2"></i>
+                            </span>
+                            <span class="float-end m-1">
+                                <i class="bi bi-facebook text-center rounded rounded-circle bg-primary text-light p-2"></i>
+                            </span>
                         </div>
                     </div>
                    

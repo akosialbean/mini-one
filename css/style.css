@@ -1,11 +1,11 @@
 body{
     font-family: 'Inconsolata', monospace;
     font-family: 'Poppins', sans-serif;
-    font-family: 'Ubuntu', sans-serif;
     background: url('../img/hero-bg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
 }
 
 .h100{
@@ -74,4 +74,22 @@ body{
 /* Button Hover */
 .btn-outline-primary:hover{
     color: #fff;
+}
+
+.bg-none{
+    background: transparent;
+}
+
+
+.forJobSeekers li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.card-hover:hover{
+    background: #3498db;
+    color: #fff
 }

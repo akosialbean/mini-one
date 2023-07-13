@@ -62,7 +62,7 @@ window.onscroll = function(){
         navLogo.style.height = "80px"
     }else{
         navBarOpacity.style.background = "black"
-        navBarOpacity.style.opacity = "0.7"
+        navBarOpacity.style.opacity = "0.6"
         navLogo.style.height = "100px"
     }
 }
