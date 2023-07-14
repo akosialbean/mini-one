@@ -59,10 +59,8 @@ window.onscroll = function(){
     if(window.scrollY){
         navBarOpacity.style.opacity = "1"
         navBarOpacity.style.background = "black"
-        navLogo.style.height = "80px"
     }else{
         navBarOpacity.style.background = "black"
         navBarOpacity.style.opacity = "0.6"
-        navLogo.style.height = "100px"
     }
 }
