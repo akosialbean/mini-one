@@ -66,6 +66,7 @@ window.onscroll = function(){
         navBarOpacity.style.background = "black"
         navBarOpacity.style.opacity = "0.6"
         navBarOpacity.style.height = "120px"
+        getStarted.style.opacity = "1"
     }
 }
 
