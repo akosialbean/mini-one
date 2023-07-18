@@ -48,9 +48,6 @@ body{
     height: 15vh;
 }
 
-.h10{
-    height: 10vh;
-}
 
 .section-bg{
     background: #f7fbfe;
@@ -220,6 +217,10 @@ a{
     #hero {
       background-attachment: fixed;
     }
+
+    footer .h10-lg {
+      height: 10vh;
+    }
   }
   @media (max-width: 768px) {
     #hero h3 {
@@ -238,6 +239,10 @@ a{
   @media (max-height: 500px) {
     #hero {
       height: 150vh;
+    }
+    
+    footer .h15-sm {
+      height: 15vh;
     }
   }
   
@@ -262,4 +267,3 @@ a{
 w90{
   width: 90vw;
 }
-
