@@ -56,20 +56,24 @@ let jobSeekersHiredInterval = setInterval(function(){
 let navBarOpacity = document.querySelector(".navbar")
 let navLogo = document.querySelector("#navLogo")
 let getStarted = document.querySelector('.btn-get-started')
+let btnToTop = document.querySelector('#btnToTop')
 window.onscroll = function(){
     if(window.scrollY){
         navBarOpacity.style.opacity = "1"
         getStarted.style.opacity = "1"
         navBarOpacity.style.background = "black"
         navBarOpacity.style.height = "100px"
+        btnToTop.style.display = "block"
     }else{
         navBarOpacity.style.background = "black"
         navBarOpacity.style.opacity = "0.6"
         navBarOpacity.style.height = "120px"
         getStarted.style.opacity = "1"
+        btnToTop.style.display = "none"
     }
 }
 
 window.onload = function(){
     getStarted.style.opacity = "1"
+    btnToTop.style.display = "none"
 }
