@@ -86,6 +86,10 @@ a{
     text-decoration: none;
 }
 
+.card-hover{
+  transition: all .5s;
+}
+
 .card-hover:hover{
     background: #3498db;
     color: #fff
@@ -241,8 +245,8 @@ a{
       height: 150vh;
     }
     
-    footer .h15-sm {
-      height: 15vh;
+    footer .h20-sm {
+      height: 20vh;
     }
   }
   
