@@ -63,9 +63,22 @@ body{
 } */
 
 /* Section Hover */
+.icon-box{
+  transition: all .5s;
+}
+
 .icon-box:hover {
     box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.1);
   }
+
+  
+.icon-circle{
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+}
 
 
 /* Button Hover */
