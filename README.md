@@ -1,10 +1,9 @@
 # mini-one
-mini one project
+mini one bootcamp project
+cloning of website using css, html and js
 
 ### Run after cloning
-- npm init -y
-- npm i bootstrap@5.3.0
-- npm i bootstrap-icons
+- npm i
 
 ### Updates
 - Created initial files
